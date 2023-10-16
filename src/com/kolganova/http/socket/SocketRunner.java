@@ -9,7 +9,7 @@ public class SocketRunner {
 
     public static void main(String[] args) throws IOException {
         var inetAddress = Inet4Address.getByName("localhost");
-        try (Socket socket = new Socket(inetAddress, 7777);
+        try (Socket socket = new Socket(inetAddress, 8081);
              var outputStream = new DataOutputStream(socket.getOutputStream());
              var inputStream = new DataInputStream(socket.getInputStream());
              Scanner scanner = new Scanner(System.in)) {

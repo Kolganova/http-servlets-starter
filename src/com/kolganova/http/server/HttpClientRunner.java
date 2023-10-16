@@ -16,7 +16,7 @@ public class HttpClientRunner {
                 .version(HttpClient.Version.HTTP_1_1)
                 .build();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://localhost:9000"))
+                .uri(URI.create("http://localhost:9090"))
                 .header("content-type", "application/json")
                 .POST(ofFile(Path.of("resources", "first.json")))
                 .build();

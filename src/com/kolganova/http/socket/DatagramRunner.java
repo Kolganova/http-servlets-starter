@@ -8,7 +8,7 @@ public class DatagramRunner {
         InetAddress inetAddress = InetAddress.getByName("localhost");
         try (DatagramSocket datagramSocket = new DatagramSocket()) {
             byte[] bytes = "Hello from UDP client!".getBytes();
-            DatagramPacket packet = new DatagramPacket(bytes, bytes.length, inetAddress, 7778);
+            DatagramPacket packet = new DatagramPacket(bytes, bytes.length, inetAddress, 8081);
             datagramSocket.send(packet);
         }
     }

@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class SocketServerRunner {
     public static void main(String[] args) throws IOException {
-        try (ServerSocket serverSocket = new ServerSocket(7777);
+        try (ServerSocket serverSocket = new ServerSocket(8081);
              Socket socket = serverSocket.accept();
              DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
              DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
