@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="http-servlets-starter:Web exploded" />
+      <artifact name="servlets-starter:exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,24 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71770aa-59c2-4600-8100-06a9f473c42a" name="Changes" comment="*">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/http_servlets_starter_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_starter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/DownloadServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FirstServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/private.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/html/public.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlets_starter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/postgresql-42.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/FlightDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/FlightDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Flight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/FlightStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/FlightService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FlightServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/http_servlets_starter_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/servlets_starter_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/servlet_starter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http-servlets-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/http-servlets-starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/server/HttpClientRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/server/HttpClientRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/server/HttpServerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/server/HttpServerRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/socket/DatagramRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/socket/DatagramRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/socket/DatagramServerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/socket/DatagramServerRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/socket/SocketRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/socket/SocketRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/socket/SocketServerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/socket/SocketServerRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -82,13 +88,22 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.35632184",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kolganova.http.dto" />
+      <recent name="com.kolganova.http.entity" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$USER_HOME$/Desktop/TomCat/apache-tomcat-9.0.78/lib/servlet-api.jar" />
@@ -162,9 +177,10 @@
       </method>
     </configuration>
     <configuration name="Tomcat 10.1.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.15" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="e5120d43-2c3f-47ef-9f26-65e539e05186" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="http-servlets-starter:Web exploded">
+        <artifact name="servlets-starter:exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -244,7 +260,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="http-servlets-starter:Web exploded" />
+          <artifact name="servlets-starter:exploded" />
         </option>
       </method>
     </configuration>
@@ -278,6 +294,8 @@
       <workItem from="1697361357350" duration="7238000" />
       <workItem from="1697468580974" duration="1775000" />
       <workItem from="1697470492282" duration="6283000" />
+      <workItem from="1697531408975" duration="2781000" />
+      <workItem from="1697546896965" duration="8985000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <option name="closed" value="true" />
