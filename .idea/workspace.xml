@@ -10,28 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71770aa-59c2-4600-8100-06a9f473c42a" name="Changes" comment="*">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlets_starter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/postgresql-42.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/servlet-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/FlightDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/FlightDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Flight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/FlightStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/FlightService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FlightServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/http_servlets_starter_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/servlets_starter_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/servlet_starter.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-servlets-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/http-servlets-starter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/TicketDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/TicketDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/TicketServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +279,7 @@
       <workItem from="1697468580974" duration="1775000" />
       <workItem from="1697470492282" duration="6283000" />
       <workItem from="1697531408975" duration="2781000" />
-      <workItem from="1697546896965" duration="8985000" />
+      <workItem from="1697546896965" duration="10807000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <option name="closed" value="true" />
@@ -313,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697389129266</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="*">
+      <option name="closed" value="true" />
+      <created>1697560653373</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697560653373</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
