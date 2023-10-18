@@ -4,7 +4,6 @@ import com.kolganova.http.dao.FlightDao;
 import com.kolganova.http.dto.FlightDto;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
 
@@ -19,13 +18,12 @@ public class FlightService {
 
     public List<FlightDto> findAll() {
         return flightDao.findAll().stream()
-                .map(flight ->
-                        new FlightDto(
-                                flight.getId(),
+                .map(flight -> FlightDto.builder().id(flight.getId()).description(
                                 """
-                                       %s - %s - %s
-                                """.formatted(flight.getDepartureAirportCode(), flight.getArrivalAirportCode(), flight.getStatus())
-                        )).collect(toList());
+                                               %s - %s - %s
+                                        """.formatted(flight.getDepartureAirportCode(), flight.getArrivalAirportCode(), flight.getStatus()))
+                                        .build()
+                        ).collect(toList());
     }
 
     public static FlightService getInstance() {

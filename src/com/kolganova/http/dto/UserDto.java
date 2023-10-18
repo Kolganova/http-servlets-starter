@@ -5,9 +5,7 @@ import lombok.Value;
 
 @Value
 @Builder
-public class TicketDto {
-
+public class UserDto {
     Long id;
-    Long flightId;
-    String seatNo;
+    String mail;
 }
