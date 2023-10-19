@@ -10,17 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71770aa-59c2-4600-8100-06a9f473c42a" name="Changes" comment="*">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/lombok.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/CookieServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/SessionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/tickets.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dto/FlightDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/FlightDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dto/TicketDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/TicketDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/service/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/FlightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/util/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FlightServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -98,6 +92,8 @@
       <recent name="com.kolganova.http.entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$USER_HOME$/Desktop/TomCat/apache-tomcat-9.0.78/lib/servlet-api.jar" />
       <recent name="$PROJECT_DIR$/web/html" />
@@ -288,7 +284,7 @@
       <workItem from="1697468580974" duration="1775000" />
       <workItem from="1697470492282" duration="6283000" />
       <workItem from="1697531408975" duration="2781000" />
-      <workItem from="1697546896965" duration="18395000" />
+      <workItem from="1697546896965" duration="21674000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <option name="closed" value="true" />
@@ -322,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697562603216</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="*">
+      <option name="closed" value="true" />
+      <created>1697662726849</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697662726849</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
