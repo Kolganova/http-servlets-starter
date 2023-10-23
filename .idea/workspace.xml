@@ -9,11 +9,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a71770aa-59c2-4600-8100-06a9f473c42a" name="Changes" comment="*">
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/tickets.jsp" afterDir="false" />
+    <list default="true" id="a71770aa-59c2-4600-8100-06a9f473c42a" name="Changes" comment="* added some redirections and jsp">
+      <change afterPath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-3.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-api-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/CreateUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/exception/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/mapper/CreateUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/ContentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/RegistrationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/JspHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/LocalDateFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/CreateUserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/ValidationResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/content.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/flights.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FlightServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/TicketServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/tickets.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +50,9 @@
       <list>
         <option value="HTML File" />
         <option value="Enum" />
+        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -70,13 +95,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "/Users/kiskadi/IdeaProjects/http-servlets-starter/web/WEB-INF/jsp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.35632184",
+    "project.structure.side.proportion": "0.16103059",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
@@ -91,12 +117,18 @@
       <recent name="com.kolganova.http.dto" />
       <recent name="com.kolganova.http.entity" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/jsp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$USER_HOME$/Desktop/TomCat/apache-tomcat-9.0.78/lib/servlet-api.jar" />
-      <recent name="$PROJECT_DIR$/web/html" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="com.kolganova.http.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.15">
@@ -284,7 +316,7 @@
       <workItem from="1697468580974" duration="1775000" />
       <workItem from="1697470492282" duration="6283000" />
       <workItem from="1697531408975" duration="2781000" />
-      <workItem from="1697546896965" duration="21674000" />
+      <workItem from="1697546896965" duration="48877000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <option name="closed" value="true" />
@@ -326,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697662726849</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="* added some redirections and jsp">
+      <option name="closed" value="true" />
+      <created>1697720216481</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697720216481</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +374,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="*" />
-    <option name="LAST_COMMIT_MESSAGE" value="*" />
+    <MESSAGE value="* added some redirections and jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="* added some redirections and jsp" />
   </component>
 </project>
