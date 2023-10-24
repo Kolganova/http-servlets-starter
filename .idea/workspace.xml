@@ -9,36 +9,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a71770aa-59c2-4600-8100-06a9f473c42a" name="Changes" comment="* added some redirections and jsp">
-      <change afterPath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-3.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-api-3.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/CreateUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/exception/ValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/mapper/CreateUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/mapper/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/ContentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/RegistrationServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/JspHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/LocalDateFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/CreateUserValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/ValidationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/content.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/flights.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="a71770aa-59c2-4600-8100-06a9f473c42a" name="Changes" comment="* created mapper, exception, validator package.&#10;changed dao, dto, entities, util, service,servlets and jsps.">
+      <change afterPath="$PROJECT_DIR$/lib/commons-validator-1.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/filter/CharsetFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/filter/LoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/filter/UnsafeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/ImageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/500.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/FlightServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dao/FlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/FlightDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dao/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/TicketDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dto/CreateUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/CreateUserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/mapper/CreateUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/mapper/CreateUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/service/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/FlightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/CookieServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/CookieServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/SessionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/SessionServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/TicketServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/tickets.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/util/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/util/JspHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/JspHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/validator/CreateUserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/CreateUserValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +54,8 @@
       <list>
         <option value="HTML File" />
         <option value="Enum" />
-        <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -100,9 +104,10 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.16103059",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
@@ -121,8 +126,8 @@
       <recent name="$PROJECT_DIR$/web/WEB-INF/jsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF/jsp" />
       <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/jsp" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$USER_HOME$/Desktop/TomCat/apache-tomcat-9.0.78/lib/servlet-api.jar" />
@@ -316,7 +321,7 @@
       <workItem from="1697468580974" duration="1775000" />
       <workItem from="1697470492282" duration="6283000" />
       <workItem from="1697531408975" duration="2781000" />
-      <workItem from="1697546896965" duration="48877000" />
+      <workItem from="1697546896965" duration="63276000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <option name="closed" value="true" />
@@ -366,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697720216481</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="* created mapper, exception, validator package.&#10;changed dao, dto, entities, util, service,servlets and jsps.">
+      <option name="closed" value="true" />
+      <created>1698087430076</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698087430077</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +388,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="*" />
     <MESSAGE value="* added some redirections and jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="* added some redirections and jsp" />
+    <MESSAGE value="* created mapper, exception, validator package.&#10;changed dao, dto, entities, util, service,servlets and jsps." />
+    <option name="LAST_COMMIT_MESSAGE" value="* created mapper, exception, validator package.&#10;changed dao, dto, entities, util, service,servlets and jsps." />
   </component>
 </project>

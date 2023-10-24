@@ -14,7 +14,7 @@ import static com.kolganova.http.util.JspHelper.*;
 @WebServlet("/tickets")
 public class TicketServlet extends HttpServlet {
 
-    protected final TicketService ticketService = TicketService.getInstance();
+    private final TicketService ticketService = TicketService.getInstance();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Long flightId = Long.valueOf(req.getParameter("flightId"));

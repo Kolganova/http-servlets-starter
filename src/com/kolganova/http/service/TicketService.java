@@ -8,7 +8,7 @@ import java.util.List;
 import static java.util.stream.Collectors.*;
 
 public class TicketService {
-    public static final TicketService INSTANCE = new TicketService();
+    private static final TicketService INSTANCE = new TicketService();
     private final TicketDao ticketDao = TicketDao.getInstance();
 
     private TicketService() {

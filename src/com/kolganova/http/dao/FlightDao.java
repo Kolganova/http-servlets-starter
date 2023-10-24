@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public class FlightDao implements Dao<Long, Flight> {
 
-    public static final FlightDao INSTANCE = new FlightDao();
+    private static final FlightDao INSTANCE = new FlightDao();
 
     private FlightDao() {
     }

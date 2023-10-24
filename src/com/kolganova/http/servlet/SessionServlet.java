@@ -13,15 +13,15 @@ import java.io.IOException;
 @WebServlet("/sessions")
 public class SessionServlet extends HttpServlet {
 
-    public static final String USER = "user";
+    private static final String USER = "user";
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         var user = (UserDto) session.getAttribute(USER);
         if (user == null) {
             user = UserDto.builder()
-                    .id(25L)
-                    .mail("test@gmail.com")
+                    .id(25)
+                    .email("test@gmail.com")
                     .build();
             session.setAttribute(USER, user);
         }

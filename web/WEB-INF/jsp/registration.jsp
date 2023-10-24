@@ -13,17 +13,21 @@
     <title>Registration</title>
 </head>
 <body>
-<form action="/registration" method="post">
-    <label for="userId">USERNAME:
+<img src="${pageContext.request.contextPath}/images/users/cat.jpeg" alt="User image">
+<form action="/registration" method="post" enctype="multipart/form-data">
+    <label for="userId">Username:
         <input type="text" name="name" id="userId">
     </label></br>
-    <label for="birthdayId">BIRTHDAY:
-        <input type="date" name="birthday" id="birthdayId">
+    <label for="birthdayId">Birthday:
+        <input type="date" name="birthday" id="birthdayId" required>
     </label></br>
-    <label for="emailId">EMAIL:
-        <input type="email" name="email" id="emailId">
+    <label for="emailId">Image:
+        <input type="file" name="image" id="imageId">
     </label></br>
-    <label for="passwordId">PASSWORD:
+    <label for="emailId">email:
+        <input type="text" name="email" id="emailId">
+    </label></br>
+    <label for="passwordId">password:
         <input type="password" name="password" id="passwordId">
     </label></br>
     <select name="role" id="roleId">
@@ -36,6 +40,16 @@
         </br>
     </c:forEach>
     <button type="submit">SEND</button>
+    <div>
+        <c:if test="${not empty requestScope.errors}">
+            <div style="color: red">
+                <c:forEach var="error" items="${requestScope.errors}">
+                    <span>${error.message}</span>
+                </br>
+                </c:forEach>
+            </div>
+        </c:if>
+    </div>
 </form>
 </body>
 </html>

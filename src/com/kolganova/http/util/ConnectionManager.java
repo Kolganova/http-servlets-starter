@@ -8,9 +8,9 @@ import java.sql.DriverManager;
 
 @UtilityClass
 public class ConnectionManager {
-    public static final String URL_KEY = "db.url";
-    public static final String USER_KEY = "db.user";
-    public static final String PASSWORD_KEY = "db.password";
+    private static final String URL_KEY = "db.url";
+    private static final String USER_KEY = "db.user";
+    private static final String PASSWORD_KEY = "db.password";
 
     static {
         loadDriver();

@@ -14,7 +14,7 @@ import java.util.Optional;
 
 public class TicketDao implements  Dao<Long, Ticket> {
 
-    public static final TicketDao INSTANCE = new TicketDao();
+    private static final TicketDao INSTANCE = new TicketDao();
     private static final String FIND_ALL_BY_FLIGHT_ID_SQL = """
             SELECT *
             FROM ticket

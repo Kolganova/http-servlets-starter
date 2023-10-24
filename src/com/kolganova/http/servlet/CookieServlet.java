@@ -15,8 +15,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 @WebServlet("/cookies")
 public class CookieServlet extends HttpServlet {
 
-    public static final String UNIQUE_ID = "userId";
-    public final AtomicInteger counter = new AtomicInteger();
+    private static final String UNIQUE_ID = "userId";
+    private final AtomicInteger counter = new AtomicInteger();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
