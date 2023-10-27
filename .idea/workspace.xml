@@ -10,39 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71770aa-59c2-4600-8100-06a9f473c42a" name="Changes" comment="* created mapper, exception, validator package.&#10;changed dao, dto, entities, util, service,servlets and jsps.">
-      <change afterPath="$PROJECT_DIR$/lib/commons-validator-1.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/filter/CharsetFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/filter/LoggingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/filter/UnsafeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/ImageServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/500.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/translations.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/translations_ru_RU.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/filter/AuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/locale/LocaleRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/LocaleServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/UrlPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dao/FlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/FlightDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dao/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/TicketDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dto/CreateUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/CreateUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/mapper/CreateUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/mapper/CreateUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/service/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/FlightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/CookieServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/CookieServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/ImageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/ImageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/SessionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/SessionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/servlet/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/servlet/TicketServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/util/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/ConnectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/util/JspHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/util/JspHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kolganova/http/validator/CreateUserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kolganova/http/validator/CreateUserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/flights.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/flights.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +44,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/resources/translations_ru_RU.properties" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -87,36 +72,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "/Users/kiskadi/IdeaProjects/http-servlets-starter/web/WEB-INF/jsp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.16103059",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kiskadi/IdeaProjects/http-servlets-starter/web/WEB-INF/jsp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.16103059&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.kolganova.http.dto" />
@@ -137,19 +123,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.15">
-    <configuration name="DatagramServerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kolganova.http.socket.DatagramServerRunner" />
-      <module name="http-servlets-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kolganova.http.socket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HttpClientExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kolganova.http.client.HttpClientExample" />
       <module name="http-servlets-starter" />
@@ -182,6 +155,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kolganova.http.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocaleRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kolganova.http.locale.LocaleRunner" />
+      <module name="http-servlets-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kolganova.http.locale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -291,7 +277,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DatagramServerRunner" />
+      <item itemvalue="Application.LocaleRunner" />
       <item itemvalue="Application.HttpClientExample" />
       <item itemvalue="Application.HttpClientRunner" />
       <item itemvalue="Application.HttpServerRunner" />
@@ -300,11 +286,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LocaleRunner" />
         <item itemvalue="Application.HttpClientRunner" />
         <item itemvalue="Application.HttpServerRunner" />
         <item itemvalue="Application.HttpClientExample" />
         <item itemvalue="Application.UrlExample" />
-        <item itemvalue="Application.DatagramServerRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -322,6 +308,16 @@
       <workItem from="1697470492282" duration="6283000" />
       <workItem from="1697531408975" duration="2781000" />
       <workItem from="1697546896965" duration="63276000" />
+      <workItem from="1698163155676" duration="955000" />
+      <workItem from="1698164416859" duration="2989000" />
+      <workItem from="1698167613742" duration="1790000" />
+      <workItem from="1698170218716" duration="509000" />
+      <workItem from="1698172530852" duration="400000" />
+      <workItem from="1698173149057" duration="6608000" />
+      <workItem from="1698268717417" duration="11741000" />
+      <workItem from="1698418954194" duration="2813000" />
+      <workItem from="1698421781209" duration="383000" />
+      <workItem from="1698422225284" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <option name="closed" value="true" />

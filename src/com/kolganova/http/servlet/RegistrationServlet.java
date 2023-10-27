@@ -4,6 +4,7 @@ import com.kolganova.http.dto.CreateUserDto;
 import com.kolganova.http.exception.ValidationException;
 import com.kolganova.http.service.UserService;
 import com.kolganova.http.util.JspHelper;
+import com.kolganova.http.util.UrlPath;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
@@ -16,7 +17,7 @@ import java.io.IOException;
 import java.util.List;
 
 @MultipartConfig(fileSizeThreshold = 1024 * 1024)
-@WebServlet("/registration")
+@WebServlet(UrlPath.REGISTRATION)
 public class RegistrationServlet extends HttpServlet {
 
     private final UserService userService = UserService.getInstance();

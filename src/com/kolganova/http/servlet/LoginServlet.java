@@ -1,9 +1,9 @@
 package com.kolganova.http.servlet;
 
 import com.kolganova.http.dto.UserDto;
-import com.kolganova.http.entity.User;
 import com.kolganova.http.service.UserService;
 import com.kolganova.http.util.JspHelper;
+import com.kolganova.http.util.UrlPath;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -13,7 +13,7 @@ import lombok.SneakyThrows;
 
 import java.io.IOException;
 
-@WebServlet("/login")
+@WebServlet(UrlPath.LOGIN)
 public class LoginServlet extends HttpServlet {
 
     private final UserService userService = UserService.getInstance();
@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException {
         userService.login(req.getParameter("email"), req.getParameter("password"))
                 .ifPresentOrElse(
                         user -> onLoginSuccess(user, req, resp),
